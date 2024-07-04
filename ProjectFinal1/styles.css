@@ -1,0 +1,16 @@
+label{
+    display: block;
+    margin: 13px;
+}
+input{
+    display: block;
+    margin: 0.5rem 0;
+}
+.inline{
+    width: unset;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
