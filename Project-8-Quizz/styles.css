@@ -9,12 +9,19 @@ header{
     width: 100%;
     background-color: #1b1b32;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
 }
 h1{
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
 }
-
+main{
+    padding-top: 25px;
+    content: Student Info;
+}
 nav > ul{
     display: flex;
     justify-content: space-evenly;
@@ -39,4 +46,25 @@ h2{
 }
 h3::before{
     content: "Question #";
+}
+
+nav li{
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+li a{
+    color: #dfdfe2;
+    text-decoration: none;
+}
+nav li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32; 
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
 }
