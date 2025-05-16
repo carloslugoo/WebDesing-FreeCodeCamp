@@ -6,6 +6,7 @@
     --window-color1: black;
     --window-color2:  #8cd9b3;
     --window-color3:  #d98cb3;
+    --window-color4:  #8cb3d9;
 }
 *{
     border: 1px solid black;
@@ -75,7 +76,6 @@ height: 10%;
 .bb3{
     width: 10%;
     height: 55%;
-    background-color: var(--building-color3);
     background: repeating-linear-gradient(
         90deg,
         var(--building-color3),
@@ -86,18 +86,15 @@ height: 10%;
 .bb4{
     width: 11%;
     height: 58%;
-    background-color: var(--building-color4)
 }
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
 .fb1{
     width: 10%;
     height: 60%;
-    background-color: var(--building-color4);
 }
 .fb2{
     width: 10%;
     height: 40%;
-    background-color: var(--building-color3);
 }
 .fb3{
     width: 10%;
@@ -123,4 +120,84 @@ height: 10%;
     height: 38%;
     background-color: var(--building-color3);
 }
-
+.bb4a{
+    width: 3%;
+    height: 10%;
+    background-color: var(--building-color4)
+}
+.bb4b{
+    width: 80%;
+    height: 5%;
+    background-color: var(--building-color4)
+}
+.bb4c{
+    width: 100%;
+    height: 85%;
+    background-color: var(--building-color4)
+}
+.building-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.window-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bb4-window{
+    width: 18%;
+    height: 90%;
+    background-color: var(--window-color4)
+}
+.fb1b{
+    width: 60%;
+    height: 10%;
+    background-color: var(--building-color4);
+}
+.fb1c{
+    width: 100%;
+    height: 80%;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--building-color4) 0%,
+        var(--building-color4) 10%,
+        transparent 10%,
+        transparent 15%
+    ), 
+    repeating-linear-gradient(
+        var(--building-color4) 0%,
+        var(--building-color4) 10%,
+        var(--window-color4) 10%,
+        var(--window-color4) 90%
+    );
+}
+.fb1a{
+    border-bottom: 7vh solid var(--building-color4);
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+}
+.fb2a{
+    width: 100%;
+    border-bottom: 10vh solid var(--building-color3);
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
+}
+.fb2b{
+    width: 100%;
+    height: 75%;
+    background-color: var(--building-color3);
+}
+.fb2-window{
+    width: 22%;
+    height: 100%;
+    background-color: var(--window-color3);
+}
+.fb3a {
+    width: 80%;
+    height: 15%;
+}
+.fb3b {
+    width: 100%;
+    height: 35%;
+}
