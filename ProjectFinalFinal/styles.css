@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f8ffae 0%, #43c6ac 100%);
+    color: #222;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    padding: 1rem 0;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.95);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+#navbar a:hover, #navbar a:focus {
+    background: #43c6ac;
+    color: #222;
+}
+#welcome-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.7);
+    padding-top: 80px;
+    text-align: center;
+}
+#welcome-section h1 {
+    font-size: 3rem;
+    color: #43c6ac;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 8px #fff;
+}
+#welcome-section p {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 2em;
+}
+#projects {
+    padding: 6rem 2rem 2rem 2rem;
+    background: rgba(255,255,255,0.85);
+    min-height: 60vh;
+}
+#projects h2 {
+    text-align: center;
+    color: #43c6ac;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+.project-tile {
+    background: #e3f0ff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(67,198,172,0.12);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-tile:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(67,198,172,0.18);
+}
+.project-tile a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    background: #43c6ac;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.project-tile a:hover {
+    background: #f8ffae;
+    color: #f5576c;
+}
+@media (max-width: 700px) {
+    #navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+    #welcome-section h1 {
+        font-size: 2.1rem;
+    }
+    #projects h2 {
+        font-size: 1.5rem;
+    }
+    .project-tile {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+}
+@media (max-width: 500px) {
+    #welcome-section {
+        padding-top: 120px;
+    }
+    #navbar {
+        font-size: 0.9rem;
+    }
+}
